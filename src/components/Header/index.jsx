@@ -1,5 +1,6 @@
 import React from 'react'
-
+//importing from material-ui
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 function Header() {
   return (
     <>
@@ -14,12 +15,12 @@ function Header() {
     <span className = "nav-item-secondline">Sign In</span>
     </div>
     <div className="nav-item">
-    <span className = "nav-item-firstline">Hello Guest</span>
-    <span className = "nav-item-secondline">Sign In</span>
+    <span className = "nav-item-firstline">Your</span>
+    <span className = "nav-item-secondline">Shop</span>
         </div>
         <div className="nav-item">
-        <span className = "nav-item-firstline">Hello Guest</span>
-    <span className = "nav-item-secondline">Sign In</span>
+       <ShoppingBasketIcon/>
+    <span className = "nav-item-secondline">0</span>
         </div>
     </div>
     </>
