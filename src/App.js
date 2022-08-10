@@ -4,7 +4,7 @@ import Home from "./components/Home"
 //styles
 import './App.css';
 import "./Header.css"; 
-import "./Home.css";
+import "./Home.css"
 
 function App() {
   return (
