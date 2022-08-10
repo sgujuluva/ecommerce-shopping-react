@@ -1,10 +1,12 @@
 import React from 'react'
 //importing from material-ui
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import StorefrontIcon from '@mui/icons-material/Storefront';
 function Header() {
   return (
     <>
     <div className="header-logo">
+      <StorefrontIcon/>
     </div>
     <div className="header-search">
 
