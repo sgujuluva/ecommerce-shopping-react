@@ -56,7 +56,7 @@ border-radius: 25px;;
     align-items: center;
 }
 .header-nav .nav-item{
-
+line-height: 1.7rem;
     display:flex;
     flex-direction: column;
 }
@@ -65,4 +65,7 @@ border-radius: 25px;;
 }
 .header-nav .nav-item .nav-item-secondline{
     font-weight: 900;
+}
+.header-nav .nav-item .shopping-basket-icon{
+    font-size: 2rem;
 }
