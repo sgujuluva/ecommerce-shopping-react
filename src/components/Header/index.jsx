@@ -10,11 +10,12 @@ function Header() {
   return (
     <div className="header">
     <div className="header-logo">
-      <StorefrontIcon/>
+      <StorefrontIcon className="icon-image"/> 
+      <p>eShop</p>
     </div>
     <div className="header-search">
     <input type="text" />
-    <SearchIcon/>
+    <SearchIcon className="search-icon"/>
     </div>
     <div className="header-nav">
     <div className="nav-item">
