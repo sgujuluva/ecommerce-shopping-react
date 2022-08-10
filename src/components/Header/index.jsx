@@ -2,14 +2,19 @@ import React from 'react'
 //importing from material-ui
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import StorefrontIcon from '@mui/icons-material/Storefront';
+import SearchIcon from '@mui/icons-material/Search';
+//styles
+/* import "../../Header.css";
+ */
 function Header() {
   return (
-    <>
+    <div className="header">
     <div className="header-logo">
       <StorefrontIcon/>
     </div>
     <div className="header-search">
-
+    <input type="text" />
+    <SearchIcon/>
     </div>
     <div className="header-nav">
     <div className="nav-item">
@@ -25,7 +30,7 @@ function Header() {
     <span className = "nav-item-secondline">0</span>
         </div>
     </div>
-    </>
+    </div>
   )
 }
 
