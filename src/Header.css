@@ -5,7 +5,7 @@
 }
 /* header */
 .header {
-  border: 2px solid red;
+background-color: black;
   display: flex;
   justify-content: space-between;
   height: 15vh;
@@ -14,10 +14,10 @@
 /* header logo */
 .header-logo {
   width: 20vw;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color:white;
 }
 .header-logo p {
   font-size: 3rem;
@@ -26,10 +26,11 @@
 .header-logo .icon-image {
   font-size: 5rem;
   margin-left: 1rem;
+ color:yellow;
 }
 /* //header-search */
 .header-search{
-  
+  border:none;
     width : 50vw;
     display:flex;
     justify-content: space-between;
@@ -43,4 +44,25 @@ border-radius: 25px;;
 }
 .header-search .search-icon{
     font-size: 2.5rem;
+    background-color: yellow;
+}
+/* header-navbar */
+.header-nav{
+
+    width:20vw;
+    color:white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-nav .nav-item{
+
+    display:flex;
+    flex-direction: column;
+}
+.header-nav .nav-item .nav-item-firstline{
+    font-weight: 300;
+}
+.header-nav .nav-item .nav-item-secondline{
+    font-weight: 900;
 }
