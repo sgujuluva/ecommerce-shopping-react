@@ -8,7 +8,8 @@ import echoDot from "../../images/echodot.png";
 import iPad from "../../images/ipad.png";
 import samsungPhone from "../../images/samsungphone.png";
 import monitor from "../../images/monitor.png";
-import juicer from "../../images/monitor.png";
+import juicer from "../../images/juicer.png";
+import microwave from "../../images/microwave.png";
 //components
 import Products from "../Products";
 
@@ -73,10 +74,10 @@ image={juicer}
 />
 <Products
 id="8"
-title="ESR Rebound Magnetic Keyboard Case, iPad Case with Keyboard Compatible with iPad Pro 12.9, Easy-Set Floating Cantilever Stand, Precision Multi-Touch Trackpad, Multi-Color Backlit Keys, Black"
-price={159.99}
-rating={4.5}
-image={iPad}
+title="Toshiba ML-EM45PIT(SS) Microwave Oven with Origin Inverter Technology, LCD Display and Smart Sensor, 1.6 Cu.ft, Stainless Steel"
+price={199.99}
+rating={4.0}
+image={microwave}
 />
 </div>
      </div>
