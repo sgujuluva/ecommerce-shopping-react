@@ -11,8 +11,8 @@ function Home() {
             <img src={eShopImage} alt="" />
         </div>
 <div className="home-row">
-    <Products/>
-    <Products/>
+<Products/>
+<Products/>
 </div>
 <div className="home-row">
 <Products/>
