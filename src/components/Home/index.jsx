@@ -19,7 +19,7 @@ function Home() {
         <img src={eShopImage} alt="" />
       </div>
       <div className="home-row">
-        <Products
+        <Products 
           id="1"
           title="Lenovo Laptop Shoulder Bag T210, 15.6-Inch Laptop or Tablet, Sleek, Durable and Water-Repellent Fabric, Lightweight Toploader, Business Casual or School, GX40Q17229, Grey"
           price={45.25}

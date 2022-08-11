@@ -7,7 +7,9 @@ import "./App.css";
 import "./Header.css";
 import "./Home.css";
 import "./Products.css";
-/* import "./Checkout.css"; */
+/* import "./Checkout.css";
+import "./Checkoutproduct.css" ;
+import "./Subtotal.css*/
 //router
 import { Routes, Route } from "react-router-dom";
 

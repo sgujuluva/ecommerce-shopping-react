@@ -16,12 +16,13 @@
   max-height: 400px;
   background-color:white;
   z-index:1;
-
+border-radius: 25px;
 }
 .product-info {
   /* border: 2px solid blue;
   height:100px;
   margin-bottom: 15px; */
+      
 }
 .product-rating {
   display: flex;
