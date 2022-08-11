@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.checkout-container{
+   width:100vw;
+   height:90vh;
+   display:flex;
+   border:5px solid green;
+}
+.checkout-items{
+    border:2px solid red;
+    width:70vw;
+    display:flex;
+}
+.checkoutAmount{
+    width:30vw;
+    border:2px solid blue;
+}
