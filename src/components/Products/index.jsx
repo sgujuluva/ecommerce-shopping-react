@@ -1,8 +1,21 @@
 import React from "react";
-//images
-import HandBagImage from "../../images/handbag.png";
+//context provider
+import {useStateValue} from "../../ContextProvider"
 
 function Products({ id, title, price, rating, image }) {
+  const [state,dispatch] = useStateValue();
+  const addToBasket = () => {
+    dispatch({
+      type:"ADD_TO_BASKET",
+      item:{
+        id:id,
+        image:image,
+        price:price,
+        rating:rating,
+      },
+    })
+  }
+  
   return (
     <div className="product-container">
       <div className="product-info">
@@ -16,7 +29,7 @@ function Products({ id, title, price, rating, image }) {
             ))}
         </div>
         <img src={image} alt="hand bag " />
-        <button>Add to Basket</button>
+        <button onClick={addToBasket}>Add to Basket</button>
       </div>
     </div>
   );

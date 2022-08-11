@@ -5,8 +5,11 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
 //Routerdom
 import {Link} from "react-router-dom";
- 
+ //context
+ import {useStateValue} from "../../ContextProvider";
+
 function Header() {
+  const [{basket},dispatch] = useStateValue();
   return (
     <div className="header">
       <Link to ="/" style={{ textDecoration:"none"}}>
@@ -32,7 +35,7 @@ function Header() {
        <Link to = "/checkout" style={{color :"white", textDecoration:"none"}}>
        <div className="nav-item shopping-basket-icon">
        <ShoppingBasketIcon />
-    <span className = "nav-item-secondline">0</span>
+    <span className = "nav-item-secondline">{basket.length}</span>
         </div>
        </Link>
        
