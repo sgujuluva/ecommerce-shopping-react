@@ -1,6 +1,14 @@
+import { Laptop } from "@mui/icons-material";
 import React from "react";
 //images
 import eShopImage from "../../images/shopimage-4.png";
+import amazonLaptop from "../../images/amazon-laptop.png";
+import ladiesHandbag from "../../images/ladieshandbag.png";
+import echoDot from "../../images/echodot.png";
+import iPad from "../../images/ipad.png";
+import samsungPhone from "../../images/samsungphone.png";
+import monitor from "../../images/monitor.png";
+import juicer from "../../images/monitor.png";
 //components
 import Products from "../Products";
 
@@ -11,18 +19,65 @@ function Home() {
             <img src={eShopImage} alt="" />
         </div>
 <div className="home-row">
-<Products/>
-<Products/>
+<Products
+id="1"
+title="Lenovo Laptop Shoulder Bag T210, 15.6-Inch Laptop or Tablet, Sleek, Durable and Water-Repellent Fabric, Lightweight Toploader, Business Casual or School, GX40Q17229, Grey"
+price={45.25}
+rating={4}
+image={amazonLaptop}
+/>
+<Products
+id="2"
+title="Women Fashion Synthetic Leather Handbags Tote Bag Shoulder Bag Top Handle Satchel Purse Set 4pcs"
+price={35.99}
+rating={4.4}
+image={ladiesHandbag}/>
 </div>
 <div className="home-row">
-<Products/>
-<Products/>
-<Products/>
+<Products
+id="3"
+title="Echo (4th Gen) | Spherical design with rich sound, smart home hub, and Alexa | Charcoal"
+price={38.79}
+rating={4.8}
+image={echoDot}
+/>
+<Products
+id="4"
+title="ESR Rebound Magnetic Keyboard Case, iPad Case with Keyboard Compatible with iPad Pro 12.9, Easy-Set Floating Cantilever Stand, Precision Multi-Touch Trackpad, Multi-Color Backlit Keys, Black"
+price={159.99}
+rating={4.5}
+image={iPad}
+/>
+<Products
+id="5"
+title="SAMSUNG Galaxy S22 Cell Phone, Factory Unlocked Android Smartphone, 256GB, 8K Camera Video, Night Mode, Brightest Display Screen, 50MP Photo Resolution, Long Battery Life, US Version, Pink Gold"
+price={749.99}
+rating={4.1}
+image={samsungPhone}
+/>
 </div>
 <div className="home-row">
-<Products/>
-<Products/>
-<Products/>
+<Products
+id="6"
+title="SAMSUNG T350 Series 22-Inch FHD 1080p Computer Monitor, 75Hz, IPS Panel, HDMI, VGA (D-Sub), 3-Sided Border-Less, FreeSync (LF22T350FHNXZA)"
+price={147.07}
+rating={4.2}
+image={monitor}
+/>
+<Products
+id="7"
+title="Hamilton Beach Juicer Machine, Big Mouth Large 3” Feed Chute for Whole Fruits and Vegetables, Easy to Clean, Centrifugal Extractor, BPA Free, 800W Motor, Black"
+price={77.85}
+rating={4.1}
+image={juicer}
+/>
+<Products
+id="8"
+title="ESR Rebound Magnetic Keyboard Case, iPad Case with Keyboard Compatible with iPad Pro 12.9, Easy-Set Floating Cantilever Stand, Precision Multi-Touch Trackpad, Multi-Color Backlit Keys, Black"
+price={159.99}
+rating={4.5}
+image={iPad}
+/>
 </div>
      </div>
      )
