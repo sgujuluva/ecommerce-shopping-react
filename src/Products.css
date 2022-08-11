@@ -4,15 +4,24 @@
   box-sizing: border-box;
 }
 .product-container {
-  height: 70vh;
 /*   border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin:5px;
+  padding:1.2rem;
+  width:100%;
+  min-width:100px;
+  max-height: 400px;
+  background-color:white;
+  z-index:1;
+
 }
 .product-info {
-  /* border: 2px solid blue; */
+  /* border: 2px solid blue;
+  height:100px;
+  margin-bottom: 15px; */
 }
 .product-rating {
   display: flex;
