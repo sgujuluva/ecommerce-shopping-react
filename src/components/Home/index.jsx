@@ -1,6 +1,6 @@
 import React from "react";
 //images
-import eShopImage from "../../images/shopimage-4.png";
+import eShopImage from "../../images/e-commerce-platforms.png";
 import amazonLaptop from "../../images/amazon-laptop.png";
 import ladiesHandbag from "../../images/ladieshandbag.png";
 import echoDot from "../../images/echodot.png";
