@@ -1,6 +1,6 @@
 import React from 'react';
-//styles
-/* import "./Checkout.css"; */
+
+
 
 function Checkout() {
   return (

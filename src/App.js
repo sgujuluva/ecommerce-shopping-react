@@ -7,6 +7,7 @@ import "./App.css";
 import "./Header.css";
 import "./Home.css";
 import "./Products.css";
+/* import "./Checkout.css"; */
 //router
 import { Routes, Route } from "react-router-dom";
 
