@@ -7,14 +7,20 @@
    width:100vw;
    height:90vh;
    display:flex;
-   border:5px solid green;
+ 
 }
 .checkout-items{
-    border:2px solid red;
+  
     width:70vw;
     display:flex;
+    flex-direction: column;
 }
 .checkoutAmount{
     width:30vw;
-    border:2px solid blue;
+  
+}
+.checkout-items h2{
+    font-size: xx-large;
+    margin:3rem;
+   
 }
