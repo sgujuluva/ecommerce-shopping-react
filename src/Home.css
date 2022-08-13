@@ -11,14 +11,31 @@
   margin-right: auto;
 
 }
-
-.home-image img {
+.home-image  {
+  /* object-fit:cover;
   width: 100%;
-  height: 500px; 
- 
+  height: 420px;  
   z-index: -1;
   margin-bottom: -2.2rem;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+  width: 100%;
+  height: 50vh;  
+  background-image: url(./images/e-commerce-platforms.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 69%;
+  position:relative;
+}
+.home-image span{
+  position:absolute;
+  left: 42rem;
+  top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .home-row {
   display: flex;

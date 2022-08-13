@@ -16,7 +16,8 @@ function Home() {
   return (
     <div className="home-container">
       <div className="home-image">
-        <img src={eShopImage} alt="" />
+        <span>eCommerce</span>
+        {/* <img src={eShopImage} alt="" /> */}
       </div>
       <div className="home-row">
         <Products 

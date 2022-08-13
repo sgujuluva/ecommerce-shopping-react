@@ -6,7 +6,8 @@ import Checkout from "./components/Checkout";
 import "./App.css";
 import "./Header.css";
 import "./Home.css";
-import "./Products.css"; import "./Checkout.css";
+import "./Products.css"; 
+import "./Checkout.css";
 import "./Checkoutproduct.css" ;
 import "./Subtotal.css";
 //router
