@@ -7,10 +7,9 @@ import SearchIcon from '@mui/icons-material/Search';
 import {Link} from "react-router-dom";
  //cocntext
  import {useStateValue} from "../../context/Context";
-import { SportsBasketball } from '@mui/icons-material';
 
 function Header() {
- const [{cart},dispatch] = useStateValue;
+ const [cart,dispatch] = useStateValue();
   return (
     <div className="header">
       <Link to ="/" style={{ textDecoration:"none"}}>
