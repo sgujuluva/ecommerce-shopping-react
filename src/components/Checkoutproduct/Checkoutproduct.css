@@ -5,7 +5,7 @@
 }
 .checkoutprod-container {
   width: 85%;
-  height: 40vh;
+  height: 45vh;
   margin: 2rem;
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -47,4 +47,5 @@ display:flex;
   font-weight: 800;
   height:5vh;
   width:12vw;
+  
 }

@@ -10,11 +10,14 @@ function Subtotal() {
   const { state, dispatch } = useContext(Cart);
   return (
     <div className="subtotal-items">
+      <div className="sub-items">
       <CurrencyFormat
         renderText={(value) => (
+          <>
           <p className="currency">
-            SubTotal ({state.cart.length} items): <b>€ {value}</b>
-          </p>
+            SubTotal ({state.cart.length} items):</p>
+             <span><b>€ {value}</b></span>
+             </>
         )}
         decimalScale={2}
         value={getCartTotal(state.cart)}
@@ -22,6 +25,7 @@ function Subtotal() {
         thousandSeparator={true}
       />
       <button>Proceed to Checkout</button>
+    </div>
     </div>
   );
 }
