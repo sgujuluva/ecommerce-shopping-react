@@ -5,67 +5,74 @@
 }
 /* header */
 .header {
-background-color: black;
+  width: 100vw;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
-  height: 10vh;
   align-items: center;
+  background-color: black;
 }
 /* header logo */
-.header-logo {
-  width: 10vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color:white;
+a {
+  width: 20%;
+  color: white;
 }
-.header-logo p {
+.header-logo {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
   font-size: 2rem;
-  text-align: center;
-  margin-left: 2rem;
 }
 .header-logo .icon-image {
-  font-size: 3rem;
-  margin-left: 1rem;
- color:yellow;
+  font-size: 2rem;
+
+  color: orange;
 }
 /* //header-search */
-.header-search{
-  border:none;
-    width : 50vw;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+.header-search {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header-search input{
-height:2rem;
-width:48vw;
-font-size: 2rem;
-border-radius: 25px;;
+.header-search input {
+  width: 95%;
+  font-size: 1rem;
+  border-radius: 25px;
+  padding: 0.5%;
 }
-.header-search .search-icon{
-    font-size: 2rem;
-    background-color: yellow;
+.header-search .search-icon {
+  font-size: 1.5rem;
+  border-radius: 25px;
+  background-color: orange;
+  padding: 0.5%;
 }
 /* header-navbar */
-.header-nav{
-    width:20vw;
-    color:white;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
+.header-nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
 }
-.header-nav .nav-item{
-line-height: 1.7rem;
-    display:flex;
-    flex-direction: column;
+.header-nav .nav-item {
+  line-height: 1.7rem;
+  display: flex;
+  flex-direction: column;
 }
-.header-nav .nav-item .nav-item-firstline{
-    font-weight: 300;
+.header-nav .nav-item .nav-item-firstline {
+  font-weight: 300;
 }
-.header-nav .nav-item .nav-item-secondline{
-    font-weight: 900;
+.header-nav .nav-item .nav-item-secondline {
+  font-weight: 900;
 }
-.header-nav .nav-item .shopping-basket-icon{
-    font-size: 2rem;
+.header-nav .nav-item .shopping-basket-icon {
+  font-size: 2rem;
+}
+/* mobile responsive */
+@media only screen and (max-width: 450px) {
+  .header-logo p {
+    font-size: 1.2rem;
+  }
 }

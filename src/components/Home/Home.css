@@ -7,8 +7,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+
 
 }
 .home-image  {
@@ -18,18 +18,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 69%;
-  position:relative;
+
 }
 .home-image span{
-  position:absolute;
-  left: 42rem;
-  top: 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   font-weight: 900;
   font-size: xx-large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
 }
 .home-row {
  
