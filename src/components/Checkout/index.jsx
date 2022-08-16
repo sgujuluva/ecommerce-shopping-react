@@ -3,7 +3,8 @@ import Checkoutproducts from "../Checkoutproduct";
 import Subtotal from "../Subtotal";
 //context
 import {Cart} from "../../context/Context";
-
+//styles
+import "./Checkout.css";
 
 function Checkout() {
   const {state,dispatch} = useContext(Cart);

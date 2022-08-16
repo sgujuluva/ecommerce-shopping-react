@@ -7,6 +7,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import {Link} from "react-router-dom";
 //context
 import {Cart} from "../../context/Context"
+//styles
+import "./Header.css";
 
 function Header() {
   const {state,dispatch} = useContext(Cart);

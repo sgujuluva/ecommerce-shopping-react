@@ -3,6 +3,8 @@ import CurrencyFormat from "react-currency-format";
 //context
 import { Cart } from "../../context/Context";
 import { getCartTotal } from "../../context/Reducer";
+//styles
+import "./Subtotal.css";
 
 function Subtotal() {
   const { state, dispatch } = useContext(Cart);

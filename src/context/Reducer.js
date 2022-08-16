@@ -18,12 +18,12 @@ const cartReducer = (state, action) => {
       };
       case ACTIONS.REMOVE_FROM_CART:
         //checking the id match of the item in cart and the original item id
-        const updatedArray = state.cart.filter((cartItem) => cartItem.id !== action.id);
+        const newCart = state.cart.filter((cartItem) => cartItem.id !== action.id);
           
-         console.log("the updated array is:",updatedArray)
+         console.log("the updated array is:",newCart)
        return {
         ...state,
-        cart: updatedArray
+        cart: newCart
        }
    
     default:

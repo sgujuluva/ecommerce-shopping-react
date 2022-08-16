@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 //context
 import { Cart } from "../../context/Context";
 import { ACTIONS } from "../../context/Reducer";
+//styles
+import "./Products.css";
 
 function Products({ product }) {
   const { state, dispatch } = useContext(Cart);

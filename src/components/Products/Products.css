@@ -4,14 +4,11 @@
   box-sizing: border-box;
 }
 .product-container {
-/*   border: 2px solid red; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
+  
   margin:5px;
   padding:1.2rem;
-  width:100%;
+  width:30%;
   min-width:100px;
   max-height: 400px;
   background-color:white;

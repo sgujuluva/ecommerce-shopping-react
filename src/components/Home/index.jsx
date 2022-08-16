@@ -10,6 +10,9 @@ import juicer from "../../images/juicer.png";
 import microwave from "../../images/microwave.png";
 //components
 import Products from "../Products";
+//styles
+import "./Home.css";
+
 const products = [
   {
     id: "1",

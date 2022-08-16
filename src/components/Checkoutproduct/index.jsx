@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 //context
 import { Cart } from "../../context/Context";
 import {ACTIONS} from "../../context/Reducer"
+//styles
+import "./Checkoutproduct.css";
 
 function Checkoutproducts({ id, title, price, rating, image }) {
   const { state, dispatch } = useContext(Cart);
