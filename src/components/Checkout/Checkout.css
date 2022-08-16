@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .checkout-container{
+    
    width:100vw;
    height:90vh;
    display:flex;

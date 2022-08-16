@@ -77,6 +77,6 @@
 /* mobile responsive */
 @media only screen and (max-width: 450px) {
   .header-logo p {
-    font-size: 1.2rem;
+    font-size: 0.6rem;
   }
 }
