@@ -17,13 +17,13 @@ function Checkoutproducts({ id, title, price, rating, image }) {
   return (
     <div className="checkoutprod-container">
       <div className="checkoutprod-info">
-        <img src={image} alt="" />
+        <img src={image} alt="prod foto" />
         <div className="prod-details">
           <p className="checkprod-title">{title}</p>
           <br />
-          <p className="checkprod-price">{price}</p>
+          <p className="checkprod-price">{price} ,-€</p>
           <div className="checkout-rating">
-            {rating}
+           
             {Array(rating)
               .fill()
               .map((_, i) => (
