@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 //context
 import { Cart } from "../../context/Context";
+import {ACTIONS} from "../../context/Reducer"
 
 function Checkoutproducts({ id, title, price, rating, image }) {
   const { state, dispatch } = useContext(Cart);
+  
   const removeFromCart = () => {
     dispatch({
-      type: "REMOVE_FROM_BASKET",
-      id: "id",
+      type: ACTIONS.REMOVE_FROM_CART ,
+      id: id,
     });
   };
   return (
@@ -29,7 +31,7 @@ function Checkoutproducts({ id, title, price, rating, image }) {
         </div>
       </div>
 
-      <button onClick={removeFromCart}>Remove from Basket</button>
+      <button onClick={ removeFromCart}>Remove from Basket</button>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 export const ACTIONS = {
   ADD_TO_CART: "ADD_TO_CART",
-  REMOVE_FROM_CART : " REMOVE_FROM_CART"
+  REMOVE_FROM_CART : "REMOVE_FROM_CART"
 };
 //total amount of the products in subtotal page
 export const getCartTotal = (cart) => {
@@ -9,7 +9,7 @@ export const getCartTotal = (cart) => {
 
 const cartReducer = (state, action) => {
   console.log(state);
-  console.log(action);
+  console.log("the action is:",action);
   switch (action.type) {
     case ACTIONS.ADD_TO_CART:
       return {
@@ -17,10 +17,15 @@ const cartReducer = (state, action) => {
         cart: [...state.cart, action.item],
       };
       case ACTIONS.REMOVE_FROM_CART:
-        return {
-            ...state,
-            cart:[]
-        }
+        //checking the id match of the item in cart and the original item id
+        const updatedArray = state.cart.filter((cartItem) => cartItem.id !== action.id);
+          
+         console.log("the updated array is:",updatedArray)
+       return {
+        ...state,
+        cart: updatedArray
+       }
+   
     default:
       return state;
   }
