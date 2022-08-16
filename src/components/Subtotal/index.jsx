@@ -1,21 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import CurrencyFormat from "react-currency-format";
 //context
-import {Cart} from "../../context/Context";
-import {getCartTotal} from "../../context/Reducer"
+import { Cart } from "../../context/Context";
+import { getCartTotal } from "../../context/Reducer";
 
 function Subtotal() {
+  const { state, dispatch } = useContext(Cart);
   return (
-    
     <div className="subtotal-items">
       <CurrencyFormat
         renderText={(value) => (
-          <p  className="currency">
-            SubTotal (0 items): <b>€ 0</b>
+          <p className="currency">
+            SubTotal ({state.cart.length} items): <b>€ {value}</b>
           </p>
         )}
         decimalScale={2}
-        value={0}
+        value={getCartTotal(state.cart)}
         displayType={"text"}
         thousandSeparator={true}
       />
