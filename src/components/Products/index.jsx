@@ -4,7 +4,7 @@ import {Cart} from "../../context/Context";
 import {ACTIONS} from "../../context/Reducer"
 
 function Products({ product }) {
-  /* id, title, price, rating, image */
+  
   const {state,dispatch} = useContext(Cart);
   const {id, title, price, rating, image} = product;
   //handler

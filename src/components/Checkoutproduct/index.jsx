@@ -1,16 +1,15 @@
 import React from "react";
-//image
-import laptopbag from "../../images/amazon-laptop.png";
-function Checkoutproducts() {
+
+function Checkoutproducts({id,title,price,rating,image}) {
   return (
     <div className="checkoutprod-container">
       <div className="checkoutprod-info">
-        <img src={laptopbag} alt="" />
+        <img src={image} alt="" />
         <div className="prod-details">
-          <p className="checkprod-title">laptop bag</p>
+          <p className="checkprod-title">{title}</p>
           <br />
-          <p className="checkprod-price">20$</p>
-          <div className="checkout-rating">⭐️</div>
+          <p className="checkprod-price">{price}</p>
+          <div className="checkout-rating">{rating}</div>
         </div>
       </div>
 
