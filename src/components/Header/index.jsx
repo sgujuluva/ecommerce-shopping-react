@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext,useState} from 'react'
 //importing from material-ui
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import StorefrontIcon from '@mui/icons-material/Storefront';
@@ -11,6 +11,7 @@ import {Cart} from "../../context/Context"
 import "./Header.css";
 
 function Header() {
+  const [input,setInput] = useState("");
   const {state,dispatch} = useContext(Cart);
   return (
     <div className="header">
@@ -22,7 +23,7 @@ function Header() {
       </Link>
     
     <div className="header-search">
-    <input type="text" />
+    <input type="text" onChange={handleChange}  value={input}/>
     <SearchIcon className="search-icon"/>
     </div>
     <div className="header-nav">
