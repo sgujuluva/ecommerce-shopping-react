@@ -1,15 +1,15 @@
-import React from 'react'
+import React, {useContext} from 'react'
 //importing from material-ui
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
 //Routerdom
 import {Link} from "react-router-dom";
- //cocntext
- import {useStateValue} from "../../context/Context";
+//context
+import {Cart} from "../../context/Context"
 
 function Header() {
- const [cart,dispatch] = useStateValue();
+  const {state,dispatch} = useContext(Cart);
   return (
     <div className="header">
       <Link to ="/" style={{ textDecoration:"none"}}>
@@ -35,7 +35,7 @@ function Header() {
        <Link to = "/checkout" style={{color :"white", textDecoration:"none"}}>
        <div className="nav-item shopping-basket-icon">
        <ShoppingBasketIcon />
-    <span className = "nav-item-secondline">{cart.length}</span>
+    <span className = "nav-item-secondline"> {state.cart.length}</span>
         </div>
        </Link>
        

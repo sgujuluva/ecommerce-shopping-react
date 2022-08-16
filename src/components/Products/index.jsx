@@ -1,8 +1,18 @@
-import React from "react";
+import React, {useContext} from "react";
+//context
+import {Cart} from "../../context/Context";
+import {ACTIONS} from "../../context/Reducer"
 
-function Products({ id, title, price, rating, image }) {
+function Products({ product }) {
+  /* id, title, price, rating, image */
+  const {state,dispatch} = useContext(Cart);
+  const {id, title, price, rating, image} = product;
+  //handler
+  const handleCart = () => {
+    dispatch({type :ACTIONS.ADD_TO_CART ,item:product})
+  }
   return (
-    <div className="product-container">
+      <div className="product-container">
       <div className="product-info">
         <p className="product-title">{title}</p>
         <p className="product-price">{price},-€</p>
@@ -14,7 +24,7 @@ function Products({ id, title, price, rating, image }) {
             ))}
         </div>
         <img src={image} alt="hand bag " />
-        <button>Add to Basket</button>
+        <button onClick={handleCart}>Add to Basket</button>
       </div>
     </div>
   );
