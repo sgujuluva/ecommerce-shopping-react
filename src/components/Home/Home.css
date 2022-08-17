@@ -27,8 +27,6 @@
   flex-wrap: wrap;
   width: 100%;
   justify-content:space-around;
-  /* align-items: center; */
-/*   z-index: 1; */
   padding:2%;
-  gap:15px;
+
  }

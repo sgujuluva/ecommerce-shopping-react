@@ -8,6 +8,7 @@
 
   background-color: white;
   border-radius: 25px;
+  margin-bottom: 2%;
 }
 .product-info {
   width: 100%;
@@ -54,3 +55,10 @@
   width: 50%;
 }
 /* add to basket button */
+
+@media only screen and (max-width: 450px) {
+  .product-container {
+    width: 100%; 
+   
+  }
+}
