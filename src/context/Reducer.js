@@ -1,6 +1,7 @@
 export const ACTIONS = {
   ADD_TO_CART: "ADD_TO_CART",
-  REMOVE_FROM_CART : "REMOVE_FROM_CART"
+  REMOVE_FROM_CART : "REMOVE_FROM_CART",
+  SEARCH_QUERY : " SEARCH_QUERY"
 };
 //total amount of the products in subtotal page
 export const getCartTotal = (cart) => {
@@ -25,6 +26,11 @@ const cartReducer = (state, action) => {
         ...state,
         cart: newCart
        }
+       case ACTIONS.SEARCH_QUERY:
+        return{
+          ...state,
+          searchQuery: action.query
+        }
    
     default:
       return state;

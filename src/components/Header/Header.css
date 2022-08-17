@@ -76,6 +76,10 @@
 }
 /* mobile responsive */
 @media only screen and (max-width: 450px) {
+  .icon-image{
+    border:2px solid red;
+    font-size: 0.2rem;
+  }
   .header-logo p {
     font-size: 0.6rem;
   }

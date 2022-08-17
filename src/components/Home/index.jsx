@@ -1,6 +1,7 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect} from "react";
 //context
-import {Cart} from "../../context/Context"
+import {Cart} from "../../context/Context";
+import {ACTIONS} from "../../context/Reducer"
 //components
 import Products from "../Products";
 //styles
@@ -8,16 +9,30 @@ import "./Home.css";
 
 
 function Home() {
-  const {products} = useContext(Cart);
+  const {products,state,setInput,dispatch} = useContext(Cart);
+  const resultArr = products.filter((item)=> {     
+         return  item?.title?.toLowerCase().includes(state.searchQuery.toLowerCase());
+  });
+   console.log("the result is",resultArr) 
+   //to make the search input empty / clear
+ useEffect(() => {
+return () => {
+  setInput("");
+  dispatch({
+    type:ACTIONS.SEARCH_QUERY,
+    query:""
+  })
+}
+},[]) 
   return (
     <div className="home-container">
       <div className="home-image">
         <span>eCommerce</span>
-        {/* <img src={eShopImage} alt="" /> */}
+    
       </div>
       <div className="home-row">
-        {products.map((item, index) => {
-          return <Products product={item} />;
+        {resultArr.map((item, index) => {
+          return <Products key={index} product={item} />;
         })}
       </div>
     </div>

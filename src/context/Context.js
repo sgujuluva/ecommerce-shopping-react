@@ -1,7 +1,7 @@
- import React from 'react';
-import {createContext,useReducer} from "react";
- import cartReducer from "./Reducer" 
- //images
+import React from "react";
+import { createContext, useReducer , useState} from "react";
+import cartReducer from "./Reducer";
+//images
 import amazonLaptop from "../images/amazon-laptop.png";
 import ladiesHandbag from "../images/ladieshandbag.png";
 import echoDot from "../images/echodot.png";
@@ -10,6 +10,7 @@ import samsungPhone from "../images/samsungphone.png";
 import monitor from "../images/monitor.png";
 import juicer from "../images/juicer.png";
 import microwave from "../images/microwave.png";
+
 export const Cart = createContext();
 
 const products = [
@@ -79,18 +80,18 @@ const products = [
   },
 ];
 
- function Context({children}) {
-
+function Context({ children }) {
+  const [input, setInput] = useState("");
   //reducer
-const [state,dispatch] = useReducer(cartReducer,{
-cart:[],
-})
-    return (
-    <Cart.Provider value = {{state,dispatch,products}}>{children}</Cart.Provider>
-  )
+  const [state, dispatch] = useReducer(cartReducer, {
+    cart: [],
+    searchQuery: "",
+  });
+  return (
+    <Cart.Provider value={{ state, dispatch, products,input, setInput }}>
+      {children}
+    </Cart.Provider>
+  );
 }
 
-export default Context 
-
-
-
+export default Context;
