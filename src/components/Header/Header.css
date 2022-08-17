@@ -6,7 +6,7 @@
 /* header */
 .header {
   width: 100vw;
-  height: 10vh;
+ padding:0.2% 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,13 +74,20 @@
   display: flex;
   align-items: center;
 }
-/* mobile responsive */
-@media only screen and (max-width: 450px) {
-  .icon-image{
-    border:2px solid red;
-    font-size: 0.2rem;
+/*  responsive */
+@media only screen and (max-width: 700px) {
+  .header-logo {
+      font-size: 1rem;
+      border:2px solid red;
   }
-  .header-logo p {
-    font-size: 0.6rem;
+  .header-logo .icon-image {
+    font-size: 2rem;
+  
+  }
+  .header-nav .nav-item .nav-item-firstline {
+    font-size:0.7rem;
+  }
+  .header-nav .nav-item .nav-item-secondline {
+    font-size:0.7rem;
   }
 }
