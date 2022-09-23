@@ -9,9 +9,7 @@ export const getCartTotal = (cart) => {
 };
 
 const cartReducer = (state, action) => {
-  console.log(state);
-  console.log("the action is:",action);
-  switch (action.type) {
+   switch (action.type) {
     case ACTIONS.ADD_TO_CART:
       return {
         ...state,
